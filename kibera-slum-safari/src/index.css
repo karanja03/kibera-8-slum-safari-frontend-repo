@@ -5,7 +5,7 @@
 
 /* landing page and the info */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap'); */
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -268,22 +268,23 @@ h1, h2, h3, h4, h5, h6 {
   font-size: medium;
   font-weight: 700;
 }
-.longparagraph{
-  display: inline-block;
-  opacity: 0;
-  filter: blur(4px);
-  animation: fade-in 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+/* .longparagraph {
+  transform: translate3d(0, 100%, 0);
+  animation: slide-up 3s infinite;
 }
 
-@keyframes fade-in {
-  100% {
-    opacity: 1;
-    filter: blur(0);
-  }
+@keyframes slide-up { 
+  0% { transform: translate3d(0, 100%, 0); }
+  50% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(0, 100%, 0); }
+  
+} */
+
+/* Define the keyframes for the animation */
+/* did you know area */
+
+.didykcard{
+  margin-left: 200px;
+  text-align: center;
 }
-
-
-
-
-
 

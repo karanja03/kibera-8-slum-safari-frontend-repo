@@ -1,6 +1,7 @@
 
 
 import React, { useEffect, useState } from 'react';
+import DidYouKnow from './DidYouKnow';
 
 function Carousel() {
   const [isNavActive, setNavActive] = useState(false);
@@ -135,7 +136,7 @@ function Carousel() {
                 alt="image"
               />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 hidder">
               <h2>What Do we Do?</h2>
               <p className='longparagraph'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia alias earum deserunt enim molestias
@@ -154,8 +155,14 @@ function Carousel() {
         </div>
       </section>
 
+      <DidYouKnow/>
+
     </div>
   );
 }
 
 export default Carousel;
+
+
+
+
