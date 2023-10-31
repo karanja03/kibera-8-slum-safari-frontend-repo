@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import DidYouKnow from './DidYouKnow';
+import { useNavigate } from 'react-router-dom';
 
 function Carousel() {
   const [isNavActive, setNavActive] = useState(false);
@@ -21,6 +22,12 @@ function Carousel() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const navigate= useNavigate()
+
+  const handleaccomplishmentsclick= ()=>{
+    navigate('/aboutus')
+  }
 
   return (
     <div>
@@ -116,7 +123,7 @@ function Carousel() {
                 autem ea possimus nesciunt et quis aliquid a sed dolor illo neque nemo odit quae deserunt accusamus dolores
                 debitis est libero.
               </p>
-              <button type="button" className="btn btn-primary btn-lg learnmore">KNOW MORE</button>
+              <button type="button" className="btn btn-primary btn-lg learnmore" onClick={handleaccomplishmentsclick}>KNOW MORE</button>
             </div>
             <div className="col-md-6 d-grid">
               <img
