@@ -1,5 +1,6 @@
 import React from 'react';
 import Founding from './Founding';
+import FounderMessage from './FounderMessage';
 
 function Accomplishments() {
   return (
@@ -14,9 +15,9 @@ function Accomplishments() {
         </section>
 
         <Founding/>
+        <FounderMessage/>
         
         <section id="testimonies" >
-          <p className="common-header">What our customers are saying about us?</p>
           <div id="testimonies_customers">
             <div className="flex-second-one">
               <blockquote>
@@ -33,7 +34,7 @@ function Accomplishments() {
               </blockquote>
             </div>
             <div className="flex-second-two">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/jQeKEGrDoQ4?si=qK8IBJVZj7hDQGV-" 
+            <iframe width="560" height="280" src="https://www.youtube.com/embed/jQeKEGrDoQ4?si=qK8IBJVZj7hDQGV-" 
             title="YouTube video player" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
 
@@ -43,7 +44,7 @@ function Accomplishments() {
 
           <div id="testimonies_customers">
             <div className="flex-second-one">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/0suVUkppxNs?si=l87B05pjNmcyC4QA"
+            <iframe width="560" height="280" src="https://www.youtube.com/embed/0suVUkppxNs?si=l87B05pjNmcyC4QA"
              title="YouTube video player" frameborder="0" 
              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
 
@@ -79,7 +80,7 @@ function Accomplishments() {
               </blockquote>
             </div>
             <div className="flex-second-one">
-            <iframe width="560" height="315" 
+            <iframe width="560" height="280" 
             src="https://www.youtube.com/embed/4PmCimD1MMc?si=QzHyYDt5ftC35VJK" 
             title="YouTube video player" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>

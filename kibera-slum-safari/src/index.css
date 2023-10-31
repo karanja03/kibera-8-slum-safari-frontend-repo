@@ -300,8 +300,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .overlay-text {
-  background-color: grey;
-  opacity: 0.9;
+  background-color:#027884;
+  opacity: 0.6;
   position: absolute;
   text-align: center;
   font-size: 4.2em;
