@@ -1,9 +1,11 @@
 
 
 import React from "react";
+import OurCoreValues from "./OurCoreValues";
 
 function WhatDoWeDo() {
   return (
+    <div>
     <div className="mt-20 w-4/5 ml-52 ">
 
       <section className="light">
@@ -56,6 +58,9 @@ function WhatDoWeDo() {
         </div>
       </section>
 
+
+    </div>
+    <OurCoreValues/>
 
     </div>
   );

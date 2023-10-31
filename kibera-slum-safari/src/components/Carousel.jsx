@@ -57,8 +57,8 @@ function Carousel() {
                   />
                 </div>
                 <div className="slideText">
-                  <h1 className="animate__animated animate__fadeInUp">KIBERA 8 SLUM SAFARI</h1>
-                  <p className="animate__animated animate__fadeInUp">KENYA</p>
+                  <h1 className="animate__animated animate__fadeInUp font-bold">KIBERA 8 SLUM SAFARI</h1>
+                  <p className="animate__animated animate__fadeInUp font-medium">KENYA</p>
                   <button type="button" className="btn btn-primary btn-lg">LEARN MORE</button>
                   <div className="buttonNav animate__animated animate__fadeInDown">
                     <button type="button" data-bs-target="#rotoTransition" data-bs-slide="prev">
@@ -92,8 +92,8 @@ function Carousel() {
                   />
                 </div>
                 <div className="slideText">
-                  <h1 className="animate__animated animate__fadeInUp">Eradicating Poverty </h1>
-                  <p className="animate__animated animate__fadeInUp">With Love And Care</p>
+                  <h1 className="animate__animated animate__fadeInUp font-bold">Eradicating Poverty </h1>
+                  <p className="animate__animated animate__fadeInUp font-medium">With Love And Care</p>
                   <button className="btn btn-primary">LEARN MORE</button>
                   <div className="buttonNav animate__animated animate__fadeInDown">
                     <button type="button" data-bs-target="#rotoTransition" data-bs-slide="prev">
@@ -116,8 +116,8 @@ function Carousel() {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <h2>Why Kibera 8 Slums Safaris?</h2>
-              <p className='longparagraph'>
+              <h2 className='text-xl font-semibold'>Why Kibera 8 Slums Safaris?</h2>
+              <p className='longparagraph text-black'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia alias earum deserunt enim molestias
                 voluptas placeat sint odit numquam mollitia, rerum qui laboriosam perspiciatis fugiat aspernatur? Commodi
                 illum nostrum provident libero impedit voluptates aperiam quaerat aspernatur maxime laborum beatae labore
@@ -127,7 +127,7 @@ function Carousel() {
                 autem ea possimus nesciunt et quis aliquid a sed dolor illo neque nemo odit quae deserunt accusamus dolores
                 debitis est libero.
               </p>
-              <button type="button" className="btn btn-primary btn-lg learnmore" onClick={handleaccomplishmentsclick}>KNOW MORE</button>
+              <button type="button" className="btn btn-primary btn-lg learnmore mt-4" onClick={handleaccomplishmentsclick} style={{backgroundColor:"#027884"}}>KNOW MORE</button>
             </div>
             <div className="col-md-6 d-grid">
               <img
@@ -138,7 +138,7 @@ function Carousel() {
           </div>
         </div>
       </section>
-      <section id="about">
+      <section id="about" >
         <div className="container">
           <div className="row">
             <div className="col-md-6 d-grid">
@@ -148,8 +148,8 @@ function Carousel() {
               />
             </div>
             <div className="col-md-6 hidder">
-              <h2>What Do we Do?</h2>
-              <p className='longparagraph'>
+              <h2 className='text-xl font-semibold'>What Do we Do?</h2>
+              <p className='longparagraph text-black'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia alias earum deserunt enim molestias
                 voluptas placeat sint odit numquam mollitia, rerum qui laboriosam perspiciatis fugiat aspernatur? Commodi
                 illum nostrum provident libero impedit voluptates aperiam quaerat aspernatur maxime laborum beatae labore
@@ -159,7 +159,7 @@ function Carousel() {
                 autem ea possimus nesciunt et quis aliquid a sed dolor illo neque nemo odit quae deserunt accusamus dolores
                 debitis est libero.
               </p>
-              <button type="button" className="btn btn-primary btn-lg learnmore" onClick={handlewhatwedoclick}>KNOW MORE</button>
+              <button type="button" className="btn btn-primary btn-lg learnmore mt-4" onClick={handlewhatwedoclick} style={{backgroundColor:"#027884"}}>KNOW MORE</button>
             </div>
 
           </div>
