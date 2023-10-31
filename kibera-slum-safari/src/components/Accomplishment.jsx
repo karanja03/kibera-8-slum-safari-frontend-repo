@@ -1,4 +1,5 @@
 import React from 'react';
+import Founding from './Founding';
 
 function Accomplishments() {
   return (
@@ -12,7 +13,8 @@ function Accomplishments() {
           </div>
         </section>
 
-        <hr />
+        <Founding/>
+        
         <section id="testimonies" >
           <p className="common-header">What our customers are saying about us?</p>
           <div id="testimonies_customers">
@@ -88,7 +90,6 @@ function Accomplishments() {
         </section>
       </div>
     </div>
-    <hr />
     </div>
   );
 }
