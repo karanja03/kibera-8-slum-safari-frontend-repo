@@ -29,6 +29,10 @@ function Carousel() {
     navigate('/aboutus')
   }
 
+  const handlewhatwedoclick=()=>{
+    navigate('/whatwedo')
+  }
+
   return (
     <div>
       <section id="roto" className={isNavActive ? 'active' : ''}>
@@ -155,7 +159,7 @@ function Carousel() {
                 autem ea possimus nesciunt et quis aliquid a sed dolor illo neque nemo odit quae deserunt accusamus dolores
                 debitis est libero.
               </p>
-              <button type="button" className="btn btn-primary btn-lg learnmore">KNOW MORE</button>
+              <button type="button" className="btn btn-primary btn-lg learnmore" onClick={handlewhatwedoclick}>KNOW MORE</button>
             </div>
 
           </div>
