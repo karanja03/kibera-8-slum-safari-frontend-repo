@@ -1,14 +1,10 @@
 import React from 'react';
-import AllTours from './AllTours';
-function MostPopular() {
+
+function AllTours() {
   return (
     <div>
-        <div className='mppageheading'>
-            <h1 className='mt-6 py-5 bg-red-300 text-5xl text-black text-center'>Kibera-8 Slum Safaris</h1>
-
-        </div>
         <div className='mostpopularTitle'>
-            <h3 className='text-black text-2xl ml-96 mb-6 mt-6 font-bold'>Most Popular</h3>
+            <h3 className='text-black text-2xl ml-96 mb-6 mt-6 font-bold'>All Tours</h3>
 
         </div>
     <div className='mostpopularbody ml-96'>
@@ -55,9 +51,13 @@ function MostPopular() {
 
     </div>
 </div>
-<AllTours/>
+<div>
+<button type="button" className="btn btn-primary btn-lg learnmore mt-11 ml-96 viewmore"  style={{backgroundColor:"#027884", marginLeft:"415px"}}>View More</button>
+
+    
+</div>
 </div>
   );
 }
 
-export default MostPopular;
+export default AllTours;
