@@ -41,16 +41,18 @@ function CardComponent() {
       </div>
       <div className="cardmostpopular">
         <div className="card-header">
-          <img src="https://kiberaslumtours.files.wordpress.com/2011/12/kibera.jpg" alt="city" />
+          <img src="https://genetsafaris.com/wp-content/uploads/2016/09/kibera-slum.jpg" alt="balloons" />
         </div>
         <div className="card-bodymostpopular">
           <p className='text-black'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
           </p>
           <button type="button" className="btn btn-primary btn-lg learnmore mt-11"  style={{backgroundColor:"#027884"}}>KNOW MORE</button>
 
+
         </div>
       </div>
+
     </div>
 </div>
 </div>
