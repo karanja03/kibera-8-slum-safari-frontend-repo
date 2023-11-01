@@ -1,0 +1,691 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* landing page and the info */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap'); */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#roto {
+  position: relative;
+}
+
+#roto::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background: linear-gradient(0deg, #fff, transparent);
+  opacity: 0;
+  z-index: 4;
+  transition: .2s all ease;
+}
+
+#roto.active::before {
+  opacity: 1;
+  height: 50%;
+}
+
+.slide {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.slide .mainImage {
+  position: absolute;
+  width: 130vw;
+  height: 130vw;
+  object-fit: cover;
+  object-position: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: rotate;
+  animation-timing-function: cubic-bezier(0.02, 0.63, 0.23, 0.99);
+  animation-iteration-count: 1;
+  animation-duration: 1.1s;
+}
+
+.slide .roundOuter {
+  position: absolute;
+  width: 86vw;
+  height: 86vw;
+  overflow: hidden;
+  border-radius: 50%;
+  left: calc(50% - 43vw);
+  top: calc(50% - 43vw);
+  filter: brightness(0.9);
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.slide .roundOuter img {
+  position: absolute;
+  width: 130vw;
+  height: 130vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  object-position: center;
+  animation-name: rotate;
+  animation-timing-function: cubic-bezier(0.02, 0.63, 0.23, 0.99);
+  animation-iteration-count: 1;
+  animation-duration: 1.3s;
+}
+
+.slide .roundInner {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  overflow: hidden;
+  left: calc(50% - 25vw);
+  top: calc(50% - 25vw);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 2;
+}
+
+.slide .roundInner img {
+  position: absolute;
+  width: 130vw;
+  height: 130vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  object-position: center;
+  animation-name: rotate;
+  animation-timing-function: cubic-bezier(0.02, 0.63, 0.23, 0.99);
+  animation-iteration-count: 1;
+  animation-duration: 1.2s;
+}
+
+.slide .slideText {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slide .slideText h1 {
+  font-size: 5vw;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5vw;
+  text-align: center;
+  padding-left: 5vw;
+  animation-delay: 1s;
+  filter: drop-shadow(0 2px 10px #000);
+  position: relative;
+}
+
+.slide .slideText h1::after {
+  content: "";
+  position: absolute;
+  width: 40vw;
+  height: 1px;
+  background-color: #fff;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slide .slideText p {
+  text-align: center;
+  letter-spacing: 20px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding-left: 1.3rem;
+  text-transform: uppercase;
+  animation-delay: 1.5s;
+  filter: drop-shadow(0 2px 10px #000);
+}
+
+.slide .slideText .buttonNav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  animation-delay: 1.7s;
+}
+
+.slide .slideText button {
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1.3rem;
+  filter: drop-shadow(0 2px 10px #000);
+}
+
+.slide .slideText span {
+  display: grid;
+  width: 1px;
+  flex: 0 0 1px;
+  background-color: #fff;
+  filter: drop-shadow(0 2px 10px #000);
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(5);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) scale(1);
+  }
+}
+
+#about {
+  color: #999;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#about h2 {
+  color: #000;
+}
+
+#about img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 575px) {
+  .slide .mainImage {
+    width: 130vh;
+    height: 130vh;
+  }
+
+  .slide .roundOuter {
+    width: 86vh;
+    height: 86vh;
+    left: calc(50% - 43vh);
+    top: calc(50% - 43vh);
+  }
+
+  .slide .roundOuter img {
+    width: 130vh;
+    height: 130vh;
+  }
+
+  .slide .roundInner {
+    width: 50vh;
+    height: 50vh;
+    left: calc(50% - 25vh);
+    top: calc(50% - 25vh);
+  }
+
+  .slide .roundInner img {
+    width: 130vh;
+    height: 130vh;
+  }
+
+  .slide .slideText h1 {
+    font-size: 9vw;
+    letter-spacing: 3vw;
+    padding-left: 3vw;
+  }
+
+  .slide .slideText p {
+    font-size: 5vw;
+    letter-spacing: 2vw;
+    padding-left: 2vw;
+  }
+}
+
+
+/* learnmore buttons */
+
+.learnmore{
+  color: #000;
+  font-size: medium;
+  font-weight: 500;
+}
+/* .longparagraph {
+  transform: translate3d(0, 100%, 0);
+  animation: slide-up 3s infinite;
+}
+
+@keyframes slide-up { 
+  0% { transform: translate3d(0, 100%, 0); }
+  50% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(0, 100%, 0); }
+  
+} */
+
+/* Define the keyframes for the animation */
+/* did you know area */
+
+.didykcard{
+  margin-left: 200px;
+  text-align: center;
+}
+
+/* about us page */
+.hero-banner {
+  background: url('https://www.shutterstock.com/image-photo/nairobi-kenya-august-2019-kibera-600w-1914202510.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  height: 60vh;
+}
+
+.overlay-text {
+  background-color:#027884;
+  opacity: 0.6;
+  position: absolute;
+  text-align: center;
+  font-size: 4.2em;
+  margin-top: 15%;
+  margin-left: 20%;
+  padding: 30px;
+}
+
+@keyframes check {
+  20% {
+    border-left: 2px solid yellow;
+  }
+  40% {
+    border-top: 2px solid blue;
+  }
+  60% {
+    border-right: 2px solid black;
+  }
+  80% {
+    border-bottom: 2px solid white;
+  }
+  100% {
+    border: 2px solid white;
+  }
+}
+
+#testimonies_customers {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: auto;
+  background-image: url('https://www.shutterstock.com/image-photo/nairobi-kenya-august-2019-kibera-600w-1914202510.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #999;
+  opacity: 1.0;
+
+  
+}
+
+.flex-second-two {
+  margin-top: 1em;
+}
+
+#testimonies_customers > div {
+  width: auto;
+  height: auto;
+}
+
+blockquote {
+  border-left: 0.5em solid red;
+  color:black ;
+  font-size: larger;
+  font-weight: 600;
+  padding-left: 20px;
+  font-family: 'Pacifico', cursive;
+} 
+
+ b {
+  color: red;
+}
+
+.howewereest{
+  /* box-shadow: 5px 5px #027884; */
+  box-shadow: 5px 5px #840E02;
+
+
+
+}
+
+/* what we do */
+/* Variables */
+
+/* Variables */
+:root {
+  --main-green: #79dd09;
+  --main-green-rgb-015: rgba(121, 221, 9, 0.1);
+  --main-yellow: #bdbb49;
+  --main-yellow-rgb-015: rgba(189, 187, 73, 0.1);
+  --main-red: #bd150b;
+  --main-red-rgb-015: rgba(189, 21, 11, 0.1);
+  --main-blue: #0076bd;
+  --main-blue-rgb-015: rgba(0, 118, 189, 0.1);
+}
+
+/* This pen */
+
+
+
+a, a:hover {
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+#pageHeaderTitle {
+  margin: 2rem 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* Cards */
+.postcard {
+  flex-wrap: wrap;
+  display: flex;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+  border-radius: 10px;
+  margin: 0 0 2rem 0;
+  overflow: hidden;
+  position: relative;
+  color:black;
+}
+
+
+.postcard.light {
+  background-color: #e1e5ea;
+}
+
+
+
+.postcard h1, .postcard .h1 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.postcard .small {
+  font-size: 80%;
+}
+
+.postcard .postcard__title {
+  font-size: 1.75rem;
+}
+
+.postcard .postcard__img {
+  max-height: 180px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+
+.postcard .postcard__bar {
+  width: 50px;
+  height: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #424242;
+  transition: width 0.2s ease;
+}
+
+.postcard .postcard__text {
+  padding: 1.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.postcard .postcard__preview-txt {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+  height: 100%;
+}
+
+.postcard .postcard__tagbox {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 14px;
+  margin: 20px 0 0 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.postcard .postcard__tagbox .tag__item {
+  display: inline-block;
+  background: rgba(83, 83, 83, 0.4);
+  border-radius: 3px;
+  padding: 2.5px 10px;
+  margin: 0 5px 5px 0;
+  cursor: default;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+
+.postcard .postcard__tagbox .tag__item:hover {
+  background: rgba(202, 55, 55, 0.8);
+}
+
+.postcard:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(-70deg, #840E02,  transparent 50%);
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.postcard:hover .postcard__bar {
+  width: 100px;
+}
+
+@media screen and (min-width: 769px) {
+  .postcard {
+    flex-wrap: inherit;
+  }
+
+  .postcard .postcard__title {
+    font-size: 2rem;
+  }
+
+  .postcard .postcard__tagbox {
+    justify-content: start;
+  }
+
+  .postcard .postcard__img {
+    max-width: 300px;
+    max-height: 100%;
+    transition: transform 0.3s ease;
+  }
+
+  .postcard .postcard__text {
+    padding: 3rem;
+    width: 100%;
+  }
+
+  .postcard.media.postcard__text:before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: #18151f;
+    top: -20%;
+    height: 130%;
+    width: 55px;
+  }
+
+  .postcard:hover .postcard__img {
+    transform: scale(1.1);
+  }
+
+  .postcard:nth-child(2n+1) {
+    flex-direction: row;
+  }
+
+  .postcard:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+
+  .postcard:nth-child(2n+1) .postcard__text:before {
+    left: -12px !important;
+    transform: rotate(4deg);
+  }
+
+  .postcard:nth-child(2n) .postcard__text:before {
+    right: -12px !important;
+    transform: rotate(-4deg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .postcard .postcard__text {
+    padding: 2rem 3.5rem;
+  }
+
+
+  .postcard.light .postcard__text:before {
+    background: #e1e5ea;
+  }
+}
+
+
+/* corevalues */
+
+.corevaluesimage{
+  height: 600px;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ourcorevaluestext{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #027884;
+  position: absolute;
+  top: 30%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 20%;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.ourcorevaluestext1{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #027884;
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 20%;
+  padding: 20px;
+  text-align: center;
+
+
+}
+
+.ourcorevaluestext2{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #027884;
+  position: absolute;
+  top: 80%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 20%;
+  padding: 20px;
+  text-align: center;
+
+
+
+}
+#testimonies{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.7) !important; /* Black w/opacity/see-through */
+
+
+}
+
+
+/* most popular section */
+
+* {
+  box-sizing: border-box;
+}
+mostpopularbody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f8fc;
+  font-family: "Roboto", sans-serif;
+  color: #10182f;
+}
+.containermostpopular {
+  display: flex;
+  width: 1040px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.cardmostpopular {
+  margin: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+}
+.card-bodymostpopular {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  min-height: 250px;
+}
+

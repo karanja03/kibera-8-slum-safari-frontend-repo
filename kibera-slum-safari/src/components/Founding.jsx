@@ -1,0 +1,38 @@
+import React from "react";
+
+function Founding(){
+
+    const cardStyle = {
+        maxWidth: '1500px',
+        
+      };
+    return(
+        <div className="card mb-6 mt-5 howewereest" style={cardStyle}>
+  <div className="row g-0">
+    <div className="col-md-4">
+      <img src="https://www.shutterstock.com/image-photo/nairobi-kenya-august-2019-kibera-600w-1914202510.jpg" className="img-fluid rounded-start" alt="..."/>
+    </div>
+    <div className="col-md-8">
+      <div className="card-body">
+        <h5 className="card-title"> How we were established</h5>
+        <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia alias earum deserunt enim molestias
+                voluptas placeat sint odit numquam mollitia, rerum qui laboriosam perspiciatis fugiat aspernatur? Commodi
+                illum nostrum provident libero impedit voluptates aperiam quaerat aspernatur maxime laborum beatae labore
+                numquam praesentium necessitatibus cupiditate saepe neque, aliquam adipisci! Quasi a tenetur magnam
+                dignissimos similique temporibus, inventore tempora suscipit, maiores ex libero consequatur itaque rerum
+                voluptate porro fugit neque in maxime vero aliquid. Dolore magnam temporibus iusto sapiente blanditiis,
+                autem ea possimus nesciunt et quis aliquid a sed dolor illo neque nemo odit quae deserunt accusamus dolores
+                debitis est libero.dignissimos similique temporibus, inventore tempora suscipit, maiores ex libero consequatur itaque rerum
+                voluptate porro fugit neque in maxime vero aliquid. Dolore magnam temporibus iusto sapiente blanditiis,
+                autem ea possimus nesciunt et quis aliquid a sed dolor illo neque nemo odit quae deserunt accusamus dolores
+                debitis est libero</p>
+        <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    )
+
+}
+export default Founding
