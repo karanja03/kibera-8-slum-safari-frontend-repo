@@ -346,6 +346,7 @@ h1, h2, h3, h4, h5, h6 {
   
 }
 
+
 .flex-second-two {
   margin-top: 1em;
 }
@@ -368,13 +369,6 @@ blockquote {
   color: red;
 }
 
-.howewereest{
-  /* box-shadow: 5px 5px #027884; */
-  box-shadow: 5px 5px #840E02;
-
-
-
-}
 
 /* what we do */
 /* Variables */
@@ -502,7 +496,7 @@ a, a:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(-70deg, #840E02,  transparent 50%);
+  background-image: linear-gradient(-70deg, #027884,  transparent 50%);
   opacity: 1;
   border-radius: 10px;
 }

@@ -113,7 +113,7 @@ function Carousel() {
       </section>
 
       <section id="about">
-        <div className="container">
+        <div className="container bg-gray-100 shadow-lg py-24 px-14">
           <div className="row">
             <div className="col-md-6">
               <h2 className='text-xl font-semibold'>Why Kibera 8 Slums Safaris?</h2>
@@ -139,7 +139,7 @@ function Carousel() {
         </div>
       </section>
       <section id="about" >
-        <div className="container">
+        <div className="container bg-gray-100 shadow-lg py-24 px-14">
           <div className="row">
             <div className="col-md-6 d-grid">
               <img
@@ -165,8 +165,9 @@ function Carousel() {
           </div>
         </div>
       </section>
-
+  <div className='ml-24 mt-4'>
       <DidYouKnow/>
+      </div>
 
     </div>
   );
