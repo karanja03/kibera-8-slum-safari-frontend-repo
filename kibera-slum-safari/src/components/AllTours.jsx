@@ -1,6 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 function AllTours() {
+ const navigate=useNavigate()
+  const handleviewmoreclick=()=>{
+    navigate('/aboutkibera')
+
+  }
   return (
     <div>
         <div className='mostpopularTitle'>
@@ -52,7 +59,7 @@ function AllTours() {
     </div>
 </div>
 <div>
-<button type="button" className="btn btn-primary btn-lg learnmore mt-11 ml-96 viewmore"  style={{backgroundColor:"#027884", marginLeft:"415px"}}>View More</button>
+<button type="button" className="btn btn-primary btn-lg learnmore mt-11 ml-96 viewmore"  style={{backgroundColor:"#027884", marginLeft:"415px"}} onClick={handleviewmoreclick}>View More</button>
 
     
 </div>
