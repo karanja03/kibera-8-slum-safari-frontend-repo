@@ -5,15 +5,15 @@ function MostPopular() {
   return (
     <div>
         <div className='mppageheading'>
-            <h1 className='mt-6 py-5 bg-red-300 text-5xl text-black text-center'>Kibera-8 Slum Safaris</h1>
+            <h1 className='mt-6 py-5  text-5xl text-black text-center' style={{backgroundColor:"#027884"}}>Kibera-8 Slum Safaris</h1>
 
         </div>
         <div className='mostpopularTitle'>
             <h3 className='text-black text-2xl ml-96 mb-6 mt-6 font-bold'>Most Popular</h3>
 
         </div>
-    <div className='mostpopularbody ml-96'>
-    <div className="containermostpopular">
+    <div className='mostpopularbody ml-96 max-w-screen-xl bg-gray-100 shadow-lg py-24 px-14'>
+    <div className="containermostpopular ml-12">
         
       <div className="cardmostpopular">
         <div className="card-header">
