@@ -1,5 +1,6 @@
 import React from 'react';
 import AllTours from './AllTours';
+import RecentRequests from './RecentRequests';
 function MostPopular() {
   return (
     <div>
@@ -56,6 +57,7 @@ function MostPopular() {
     </div>
 </div>
 <AllTours/>
+<RecentRequests/>
 </div>
   );
 }

@@ -689,3 +689,8 @@ mostpopularbody {
   min-height: 250px;
 }
 
+.big-gap {
+  padding: 50px; /* Adjust this value as needed for a larger gap */
+}
+
+
