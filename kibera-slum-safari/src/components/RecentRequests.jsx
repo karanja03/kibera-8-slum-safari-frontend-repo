@@ -13,9 +13,9 @@ function RecentRequests() {
   return (
     <div>
       <div>
-        <h3 className="text-black text-2xl ml-96 mb-6 mt-14 font-bold">Recent Requests</h3>
+        <h3 className="text-black text-2xl ml-36 mb-6 mt-14 font-bold">Recent Requests</h3>
       </div>
-      <table className="mt-8 ml-96 min-w-min max-w-screen-xl  bg-gray-100  shadow-lg py-64 p px-96 "  style={{ width: "1500px" }}>
+      <table className="mt-8 ml-36 min-w-min max-w-screen-xl  bg-gray-100  shadow-lg py-64 p px-96 "  style={{ width: "1500px" }}>
         <tbody className="ml-12">
           <tr style={tableRowStyles}>
             <td className="p-2 text-black hover:bg-custom hover:rounded-lg transition duration-300">

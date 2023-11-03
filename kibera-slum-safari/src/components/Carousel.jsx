@@ -35,9 +35,9 @@ function Carousel() {
 
   return (
     <div>
-      <section id="roto" className={isNavActive ? 'active' : ''}>
-        <div id="rotoTransition" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false">
-          <div className="carousel-inner">
+<section id="roto" className={`w-11/12 ml-20 mt-20 ${isNavActive ? 'active' : ''}`}  >
+        <div id="rotoTransition" className="carousel slide carousel-fade  " data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false">
+          <div className="carousel-inner ">
             <div className="carousel-item active">
               <div className="slide">
                 <img
@@ -59,7 +59,6 @@ function Carousel() {
                 <div className="slideText">
                   <h1 className="animate__animated animate__fadeInUp font-bold">KIBERA 8 SLUM SAFARI</h1>
                   <p className="animate__animated animate__fadeInUp font-medium">KENYA</p>
-                  <button type="button" className="btn btn-primary btn-lg">LEARN MORE</button>
                   <div className="buttonNav animate__animated animate__fadeInDown">
                     <button type="button" data-bs-target="#rotoTransition" data-bs-slide="prev">
                       <i className="fa-solid fa-arrow-left-long"></i>
@@ -94,7 +93,6 @@ function Carousel() {
                 <div className="slideText">
                   <h1 className="animate__animated animate__fadeInUp font-bold">Eradicating Poverty </h1>
                   <p className="animate__animated animate__fadeInUp font-medium">With Love And Care</p>
-                  <button className="btn btn-primary">LEARN MORE</button>
                   <div className="buttonNav animate__animated animate__fadeInDown">
                     <button type="button" data-bs-target="#rotoTransition" data-bs-slide="prev">
                       <i className="fa-solid fa-arrow-left-long"></i>
@@ -107,7 +105,6 @@ function Carousel() {
                 </div>
               </div>
             </div>
-            {/* {incase i wanna add more items to the carousel} */}
           </div>
         </div>
       </section>

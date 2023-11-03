@@ -283,12 +283,19 @@ h1, h2, h3, h4, h5, h6 {
 /* Define the keyframes for the animation */
 /* did you know area */
 
-.didykcard{
-  margin-left: 200px;
-  text-align: center;
-}
 
 /* about us page */
+
+/* about us page */
+.hero-banner {
+  background: url('https://www.shutterstock.com/image-photo/nairobi-kenya-august-2019-kibera-600w-1914202510.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  height: 60vh;
+}
 
 .overlay-text {
   background-color:#027884;
