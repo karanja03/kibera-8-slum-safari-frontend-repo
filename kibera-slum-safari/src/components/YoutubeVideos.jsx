@@ -1,23 +1,9 @@
-import React from 'react';
-import Founding from './Founding';
-import FounderMessage from './FounderMessage';
+import React from "react";
 
-function Accomplishments() {
-  return (
-    <div>
-    <div className="container">
-
-      <div className="content">
-        <section id="hero">
-          <div className="hero-banner">
-            <span className="overlay-text">KIBERA 8 SLUM  SAFARIS <br/> WHO ARE WE?</span>
-          </div>
-        </section>
-
-        <Founding/>
-        <FounderMessage/>
-        
-<div id="testimonies" className="bg-gray-100">
+function YouTubeVideos (){
+    return(
+        <div>
+            <div id="testimonies" className="bg-gray-100">
         <div id="testimonies_customers" className="flex justify-center items-center space-x-3 space-y-1 p-8">
           <div className="w-1/2  p-4 rounded-lg shadow-lg">
           <blockquote className="bg-gradient-027884 text-black text-lg font-bold rounded-lg p-4">
@@ -99,10 +85,10 @@ function Accomplishments() {
           </div>
         </div>
       </div>   
-         </div>
-    </div>
-    </div>
-  );
+
+        </div>
+    )
 }
 
-export default Accomplishments;
+export default  YouTubeVideos
+

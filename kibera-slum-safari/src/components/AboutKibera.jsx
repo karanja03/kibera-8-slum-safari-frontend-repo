@@ -4,9 +4,9 @@ import IntroductionAk from "./IntroductionAK";
 import HistoryAK from "./HistoryAK";
 import PhotoGalleryAK from "./PhotoGalleryAK";
 import Population from "./Population";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import Challenges from "./Challenges";
+import YouTubeVideos from "./YoutubeVideos";
 
 
 function AboutKibera(){
@@ -18,6 +18,7 @@ function AboutKibera(){
             <PhotoGalleryAK/>
             <Population/>
             <Challenges/>
+            <YouTubeVideos/>
             {/* <Maps/> */}
            
             

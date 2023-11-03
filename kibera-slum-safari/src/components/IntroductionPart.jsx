@@ -3,7 +3,7 @@ import IntroductionAK from "./IntroductionAK";
 import HistoryAK from "./HistoryAK";
 import HeaderAK from "./HeaderAK";
 
-function Introduction(){
+function IntroductionPart(){
     return(
         <div>
             <HeaderAK/>
@@ -13,4 +13,4 @@ function Introduction(){
         </div>
     )
 }
-export default Introduction;
+export default IntroductionPart;
