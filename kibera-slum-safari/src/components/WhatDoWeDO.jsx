@@ -6,7 +6,7 @@ import OurCoreValues from "./OurCoreValues";
 function WhatDoWeDo() {
   return (
     <div>
-    <div className="mt-20 w-4/5 ml-52 ">
+    <div className=" relative mt-20 w-4/5 ml-52 ">
 
       <section className="light">
         <div className="container py-2">

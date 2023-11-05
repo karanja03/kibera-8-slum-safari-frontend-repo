@@ -6,6 +6,7 @@
 
 import React from 'react';
 import MostPopular from './MostPopular';
+import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faList, faEnvelope, faCog, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 
@@ -28,23 +29,39 @@ const Sidebar = () => {
     transition: 'margin 0.3s',
   };
 
+  const navigate=useNavigate()
+
+  const handlemostpopularclick=()=>{
+    navigate("/mostpopular")
+
+  }
+  const handlealltoursclick= ()=>{
+    navigate("/alltours")
+  }
+
+  const handlemessagesclick=()=>{
+    navigate("/requests")
+
+  }
+
+
   return (
     <div>
 
     <div className=" text-white  h-screen mt-12 transition-all duration-300 ease-in-out">
 
       <div style={sidebarStyle} className='pt-12'>
-        <h2 className='font-extrabold text-center pt-12 '>ADMIN DASHBOARD</h2>
+        <h2 className='font-extrabold text-center pt-12  '>ADMIN DASHBOARD</h2>
         <ul className='space-y-12 pt-12'>
-          <li className="p-4 hover:bg-gray-600 flex items-center ">
+          <li className="p-4 hover:bg-gray-600 flex items-center " onClick={handlemostpopularclick}>
             <FontAwesomeIcon icon={faStar} className="mr-2" />
             Most Popular
           </li>
-          <li className="p-4 hover:bg-gray-600 flex items-center">
+          <li className="p-4 hover:bg-gray-600 flex items-center" onClick={handlealltoursclick}>
             <FontAwesomeIcon icon={faList} className="mr-2" />
             All Tours
           </li>
-          <li className="p-4 hover:bg-gray-600 flex items-center">
+          <li className="p-4 hover:bg-gray-600 flex items-center"  onClick={handlemessagesclick}>
             <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
             Messages
           </li>
@@ -59,7 +76,7 @@ const Sidebar = () => {
         </ul>
       </div>
       <div style={contentStyle}>
-        <div className="">
+        <div>
           <MostPopular/>
         </div>
       </div>

@@ -76,7 +76,8 @@ function PhotoGalleryAK() {
     return (
         <div>
             <h1 className="text-black text-xl font-semibold py-10 text-center">PHOTO GALLERY</h1>
-        <div className="photo-gallery" style={galleryStyles}>
+            
+        <div className="photo-gallery bg-gray-100 p-12 shadow-xl" style={galleryStyles}>
           {imageInfo.map((image, index) => (
             <div key={index} className="photo-item" style={itemStyles}>
               <img

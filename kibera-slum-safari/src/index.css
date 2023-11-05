@@ -5,10 +5,8 @@
 
 /* landing page and the info */
 
-/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap'); */
 
 body {
-  font-family: 'Poppins', sans-serif;
   color: #fff;
 }
 
@@ -26,28 +24,10 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-#roto::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 0;
-  bottom: 0;
-  left: 0;
-  pointer-events: none;
-  background: linear-gradient(0deg, #fff, transparent);
-  opacity: 0;
-  z-index: 4;
-  transition: .2s all ease;
-}
-
-#roto.active::before {
-  opacity: 1;
-  height: 50%;
-}
 
 .slide {
   width: 100%;
-  min-height: 100vh;
+  min-height: 50vh;
   position: relative;
   overflow: hidden;
   background-color: #000;
@@ -168,28 +148,6 @@ h1, h2, h3, h4, h5, h6 {
   filter: drop-shadow(0 2px 10px #000);
 }
 
-.slide .slideText .buttonNav {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  animation-delay: 1.7s;
-}
-
-.slide .slideText button {
-  border: none;
-  background: transparent;
-  color: #fff;
-  font-size: 1.3rem;
-  filter: drop-shadow(0 2px 10px #000);
-}
-
-.slide .slideText span {
-  display: grid;
-  width: 1px;
-  flex: 0 0 1px;
-  background-color: #fff;
-  filter: drop-shadow(0 2px 10px #000);
-}
 
 @keyframes rotate {
   0% {
@@ -202,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #about {
   color: #999;
-  padding-top: 80px;
+  padding-top: 40px;
   padding-bottom: 80px;
 }
 
@@ -268,20 +226,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: medium;
   font-weight: 500;
 }
-/* .longparagraph {
-  transform: translate3d(0, 100%, 0);
-  animation: slide-up 3s infinite;
-}
-
-@keyframes slide-up { 
-  0% { transform: translate3d(0, 100%, 0); }
-  50% { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(0, 100%, 0); }
-  
-} */
-
-/* Define the keyframes for the animation */
-/* did you know area */
 
 
 /* about us page */
@@ -308,62 +252,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 30px;
 }
 
-@keyframes check {
-  20% {
-    border-left: 2px solid yellow;
-  }
-  40% {
-    border-top: 2px solid blue;
-  }
-  60% {
-    border-right: 2px solid black;
-  }
-  80% {
-    border-bottom: 2px solid white;
-  }
-  100% {
-    border: 2px solid white;
-  }
-}
 
-#testimonies_customers {
-  display: flex;
-  flex: 1 1 auto;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  flex: auto;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  opacity: 1.0;
-
-  
-}
-
-
-.flex-second-two {
-  margin-top: 1em;
-}
-
-#testimonies_customers > div {
-  width: auto;
-  height: auto;
-}
-
-blockquote {
-  border-left: 0.5em solid red;
-  color:black ;
-  font-size: larger;
-  font-weight: 600;
-  padding-left: 20px;
-  font-family: 'Pacifico', cursive;
-} 
-
- b {
-  color: red;
-}
 
 
 /* what we do */
@@ -572,69 +461,8 @@ a, a:hover {
 
 /* corevalues */
 
-.corevaluesimage{
-  height: 600px;
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  
-  
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.ourcorevaluestext{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  border: 3px solid #027884;
-  position: absolute;
-  top: 30%;
-  left: 48%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 20%;
-  padding: 20px;
-  text-align: center;
-
-}
-
-.ourcorevaluestext1{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  border: 3px solid #027884;
-  position: absolute;
-  top: 80%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 20%;
-  padding: 20px;
-  text-align: center;
 
 
-}
-
-.ourcorevaluestext2{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  border: 3px solid #027884;
-  position: absolute;
-  top: 80%;
-  left: 15%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 20%;
-  padding: 20px;
-  text-align: center;
-
-
-
-}
 #testimonies{
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.7) !important; /* Black w/opacity/see-through */

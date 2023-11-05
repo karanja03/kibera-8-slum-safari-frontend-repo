@@ -1,94 +1,120 @@
+// import React from "react";
+
+// const YouTubeVideos = () => {
+//   const questions = [
+//     {
+//       question: "What is the essence of compassion?",
+//       answer: "A kind gesture can reach a wound that only compassion can heal.",
+//       author: "Steve Maraboli",
+//     },
+//     {
+//       question: "What's the meaning of life?",
+//       answer: "The meaning of life is to find your gift. The purpose of life is to give it away.",
+//       author: "Pablo Picasso",
+//     },
+//     {
+//       question: "What is true charity?",
+//       answer: "Charity is not about 'giving to', charity is about 'being with'.",
+//       author: "Mother Teresa",
+//     },
+//   ];
+
+//   const videoSources = [
+//     "https://www.youtube.com/embed/jQeKEGrDoQ4?si=qK8IBJVZj7hDQGV-",
+//     "https://www.youtube.com/embed/0suVUkppxNs?si=l87B05pjNmcyC4QA",
+//     "https://www.youtube.com/embed/4PmCimD1MMc?si=QzHyYDt5ftC35VJK",
+//   ];
+
+//   return (
+//     <div className="bg-gradient-027884 py-10">
+//       <div className="container mx-auto">
+//         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+//           {questions.map((question, index) => (
+//             <div className="question-container" key={index}>
+//               <div className="question">
+//                 <h3 className="question-text">{question.question}</h3>
+//                 <p className="question-answer">{question.answer}</p>
+//                 <cite className="question-author">- {question.author}</cite>
+//               </div>
+//               <div className="video-container">
+//                 <iframe
+//                   width="100%"
+//                   height="280"
+//                   src={videoSources[index]}
+//                   title={question.question}
+//                   frameBorder="0"
+//                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+//                   allowFullScreen
+//                 ></iframe>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default YouTubeVideos;
+
+
 import React from "react";
 
-function YouTubeVideos (){
-    return(
-        <div>
-            <div id="testimonies" className="bg-gray-100">
-        <div id="testimonies_customers" className="flex justify-center items-center space-x-3 space-y-1 p-8">
-          <div className="w-1/2  p-4 rounded-lg shadow-lg">
-          <blockquote className="bg-gradient-027884 text-black text-lg font-bold rounded-lg p-4">
-              <i className="fas fa-quote-left"></i>
-              <br />
-              A kind gesture can reach a wound,
-              <br />
-              that only compassion can heal
-              <br />
-              <i className="fas fa-quote-right"></i>
-              <br />
-              <cite>- Steve Maraboli</cite>
-            </blockquote>
-          </div>
-          <div className="w-1/2  p-4 rounded-lg shadow-lg">
-            <iframe
-              width="560"
-              height="280"
-              src="https://www.youtube.com/embed/jQeKEGrDoQ4?si=qK8IBJVZj7hDQGV-"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-          </div>
+const YouTubeVideos = () => {
+  const questions = [
+    {
+      answer: "A kind gesture can reach a wound that only compassion can heal.",
+      author: "Steve Maraboli",
+    },
+    {
+      answer: "The meaning of life is to find your gift. The purpose of life is to give it away.",
+      author: "Pablo Picasso",
+    },
+    {
+      answer: "Charity is not about 'giving to', charity is about 'being with'.",
+      author: "Mother Teresa",
+    },
+    {
+      answer: "Kindness is a language that the deaf can hear and the blind can see",
+      author: "Mark Twain",
+    },
+  ];
+
+  const videoSources = [
+    "https://www.youtube.com/embed/jQeKEGrDoQ4?si=qK8IBJVZj7hDQGV-",
+    "https://www.youtube.com/embed/0suVUkppxNs?si=l87B05pjNmcyC4QA",
+    "https://www.youtube.com/embed/4PmCimD1MMc?si=QzHyYDt5ftC35VJK",
+    "https://www.youtube.com/embed/3APqpb-TWi0?si=5I98wPX0M1U8nhQ4",
+  ];
+
+
+  return (
+    <div className=" py-10 ml-44 mt-12 bg-gray-100 shadow-xl w-4/5" style={{ background: 'linear-gradient(-70deg, #027884, transparent 50%)' }}>
+      <div className="container mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ml-12 ">
+          {questions.map((question, index) => (
+            <div className="question-container" key={index}>
+              <div className="question">
+                <p className="question-answer font-semibold text-black text-lg">{question.answer}</p>
+                <cite className="question-author text-black">- {question.author}</cite>
+              </div>
+              <div className="video-container">
+                <iframe
+                  width="60%"
+                  height="280"
+                  src={videoSources[index]}
+                  title={question.question}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          ))}
         </div>
+      </div>
+    </div>
+  );
+};
 
-        <div id="testimonies_customers" className="flex justify-center items-center space-x-3 space-y-1 p-8">
-          <div className="w-1/2  p-4 rounded-lg shadow-lg">
-            <iframe
-              width="560"
-              height="280"
-              src="https://www.youtube.com/embed/0suVUkppxNs?si=l87B05pjNmcyC4QA"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-          </div>
-          <div className="w-1/2  p-4 rounded-lg shadow-lg">
-          <blockquote className="bg-gradient-027884 text-black text-lg font-bold rounded-lg p-4">
-              <i className="fas fa-quote-left"></i>
-              <br />
-              The meaning of life is to find your gift.
-              <br />
-              The purpose of life is to give it away.
-              <br />
-              <i className="fas fa-quote-right"></i>
-              <br />
-              <cite>- Pablo Picasso</cite>
-            </blockquote>
-          </div>
-        </div>
-
-        <div id="testimonies_customers" className="flex justify-center items-center space-x-3 space-y-1 p-8">
-          <div className="w-1/2  p-4 rounded-lg shadow-lg">
-          <blockquote className="bg-gradient-027884 text-black text-lg font-bold rounded-lg p-4">
-              <i className="fas fa-quote-left"></i>
-              <br />
-              Charity is not about 'giving to',
-              <br />
-              - charity is about 'being with'.
-              <br />
-              <i className="fas fa-quote-right"></i>
-              <br />
-              <cite>- Mother Teresa</cite>
-            </blockquote>
-          </div>
-          <div className="w-1/2  p-4 rounded-lg shadow-lg">
-            <iframe
-              width="560"
-              height="280"
-              src="https://www.youtube.com/embed/4PmCimD1MMc?si=QzHyYDt5ftC35VJK"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
-      </div>   
-
-        </div>
-    )
-}
-
-export default  YouTubeVideos
-
+export default YouTubeVideos;
